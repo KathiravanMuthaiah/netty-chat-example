@@ -75,7 +75,7 @@ public class ChatNode {
                     });
 
             ChannelFuture serverFuture = serverBootstrap.bind(port).sync();
-            System.out.println("Server listening on port " + port);
+            System.out.println("Server listening on port :" + port);
 
             // Keep server running
             serverFuture.channel().closeFuture().sync();
