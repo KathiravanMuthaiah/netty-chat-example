@@ -1,8 +1,13 @@
 # Handle line endings automatically for cross-platform compatibility
 * text=auto
 
-# Explicit handling for Python
-*.py text eol=lf
+# Explicit handling for Python/java/other
+*.py text eol=lf diff=python
+*.java  text diff=java
+*.yml   text
+*.yaml  text
+*.md    text
+*.json  text
 
 # Treat shell scripts and Dockerfiles as text
 *.sh text eol=lf

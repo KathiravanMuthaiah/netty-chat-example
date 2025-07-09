@@ -1,3 +1,14 @@
+# Docker output & cache
+*.log
+docker-volume/
+*.pid
+
+# Java artifacts
+*.jar
+target/
+build/
+
+# Python artifacts
 __pycache__/
 *.pyc
 .git/
@@ -9,3 +20,7 @@ venv/
 *.whl
 log/
 logs/
+
+
+# VSCode
+.vscode/

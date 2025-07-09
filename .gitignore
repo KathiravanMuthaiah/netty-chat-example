@@ -27,6 +27,8 @@ root/
 # Environment variables
 .env
 .env.*
+.venv/
+env/
 
 # Test / coverage
 .coverage
@@ -55,6 +57,9 @@ target/
 .gradle/
 build/
 out/
+
+# Keep prometheus agent
+!jmx_prometheus_javaagent-0.18.0.jar
 
 # Maven wrapper
 .mvn/
@@ -133,4 +138,22 @@ Thumbs.db
 *.bak
 *.orig
 *.sublime-workspace
+
+
+# ================================
+# NodeJS
+# ================================
+node_modules/
+npm-debug.log
+yarn-debug.log
+.yarn/
+dist/
+
+# ================================
+# Kubernetes & Helm artifacts
+# ================================
+*.tgz
+.kube/
+
+
 
